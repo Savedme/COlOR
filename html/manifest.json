@@ -1,0 +1,28 @@
+{
+  "name": "PODO",
+  "description" : "Practice Ticketing",
+  "version": "2.0",
+  "manifest_version": 2,
+  "browser_action": {
+  "default_popup": "popup.html",
+  "default_icon": "Gr.png"
+  }
+  }
+
+
+
+
+
+/*
+{
+    "name": "PODO",
+    "description" : "Practice Ticketing",
+    "version": "2.0",
+    "manifest_version": 2,
+    "background": {
+      "page": "default_popup.html"
+    },
+    "browser_action": {
+      "default_icon": "Gr.png"
+    }
+  }*/
