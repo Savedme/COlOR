@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 
 <head>
-
-    <style type="text/css" link="css/main.css" ></style>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
 <style>
     html, body{
     
@@ -20,13 +20,42 @@
         overflow: hidden;
     }        
 
+    .menu{
+        display:block;
+        height:7em; 
+        width:100%;
+     }
+
+     .menu img{
+
+        width:40px;
+        height:50px;
+        float:right; 
+
+        padding-top:10px;
+        padding-right:10px;
+     }
+
+
     .mode{
 
-        width:200px;
-        height:200px;
+        width:16em;
+        height:16em;
+
+        margin-top: 10em;
+        
     }
-    
-    
+
+    .level_s{
+
+        width: 200px;
+
+        display: inline;
+        float: left;
+        padding-left: 4em;
+    }
+
+  
     </style>
     
 
@@ -38,8 +67,9 @@
 
     <div class="container">
     
-        <img src="Egg.png" class="mode"/>
-        <img src="Nectarine.png" class="mode"/>
+        <div class="level_s"> <a href="easy_game.html"> <img src="Egg.png" class="mode" id="easy"/></a> Easy</div>
+        <div class="level_s"> <a href="nor_game.html"><img src="Nectarine.png" class="mode" id="normal"/></a> Normal</div>
+        <div class="level_s"> <a href="hard_game.html"><img src="hot_cake.png" class="mode" id="hard"/></a> Hard</div>
     </div>
 
   
