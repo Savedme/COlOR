@@ -5,6 +5,7 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="easy_game.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
 <style>
     html, body{
@@ -19,7 +20,45 @@
 
         overflow: hidden;
     }        
-    </style>
 
+    .backimg{
+
+        width: 50em;
+        height: 50em;
+
+        margin-left: 9em;
+
+        z-index: 20;
+    }
+
+    .tile{
+
+        position: absolute;
+
+        width: 19em;
+        height: 19em;
+        border-radius: 19em;
+
+        background-color: white;
+
+        z-index: 10;
+    }
+
+    </style>
 </head>
+<body>
+
+    <img src="Nectarine.png" class="backimg"/>
+
+    <div>
+
+        <div class="tile" id="tile1" style="left: 12em; top:5em;"></div>
+        <div class="tile" id="tile2" style="right: 12em; top:5em;"></div>
+        <div class="tile" id="tile3" style="right: 12em; bottom:5em;"></div>
+        <div class="tile" id="tile4" style="left: 12em; bottom:5em;"></div>
+
+    </div>
+
+
+</body>
 </html>
