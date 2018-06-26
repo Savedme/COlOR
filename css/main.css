@@ -54,3 +54,23 @@ html, body{
      .adjust{
          margin-left: 12%;
      }
+
+     #tile1{
+        left: 12em; top:5em;
+     }
+
+     #tile2{
+        right: 12em; top:5em;
+     }
+
+     #tile3{
+        right: 12em; bottom:5em;
+     }
+     
+
+     #tile4{
+        left: 12em; bottom:5em;
+     }
+     
+     
+

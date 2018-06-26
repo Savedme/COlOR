@@ -27,6 +27,7 @@
         height: 50em;
 
         margin-left: 9em;
+        margin-top:-7em; 
 
         z-index: 20;
     }
@@ -44,18 +45,48 @@
         z-index: 10;
     }
 
+    .menu{
+        display:block;
+        height:70px; 
+        width:100%;
+     }
+
+     .menu img{
+
+        width:40px;
+        height:50px;
+        float:right; 
+
+        padding-top:10px;
+        padding-right:10px;
+     }
+
     </style>
+
+    <script>
+    
+    window.onload = function(){
+    var repeat = setInterval(setTime,3000);
+
+    var getAnswer1 = document.getElementById('tile1');
+    var getAnswer2 = document.getElementById('tile2');
+    var getAnswer3 = document.getElementById('tile3');
+    var getAnswer4 = document.getElementById('tile4');
+
+}
+    </script>
 </head>
 <body>
+        <div class="menu" > <img src="Button3.png"></div>
 
     <img src="Nectarine.png" class="backimg"/>
 
-    <div>
+    <div id ="pack">
 
         <div class="tile" id="tile1" style="left: 12em; top:5em;"></div>
         <div class="tile" id="tile2" style="right: 12em; top:5em;"></div>
         <div class="tile" id="tile3" style="right: 12em; bottom:5em;"></div>
-        <div class="tile" id="tile4" style="left: 12em; bottom:5em;"></div>
+        <div class="tile" id="tile4" style="left: 12em; bottom:5em;" ></div>
 
     </div>
 

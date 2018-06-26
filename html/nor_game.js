@@ -1,59 +1,52 @@
-
-var not=4;
-
-var right_answer = new Array();
-var user_answer = new Array();
+var not=0;
+var right_answer;
+var user_answer;
 
 var num=0;
-var check=0;
 
 var setTime = function(){
     if(num <= 5){
         num++;
         makeColor();
     }else{
-        alert("you get "+not+" point!" );
+        alert("you get "+not+" point!");
+        clearInterval(repeat);
+
         window.location.reload();
-        clearInterval(repeat);    
     }
 }
 
 window.onload = function(){
-
     var repeat = setInterval(setTime,3000);
 
-    var getAnswer1 = document.getElementById('tile1');
-    var getAnswer2 = document.getElementById('tile2');
-    var getAnswer3 = document.getElementById('tile3');
-    var getAnswer4 = document.getElementById('tile4');
 }
 
-function getAnswer1(){
-    user_answer += "a";
-    console.log("set a");
-}
+function getAnswer(answer){
 
-function getAnswer2(){
-    user_answer += "b";
-    console.log("set b");
-}
-
-function getAnswre3(){
-    user_answer += "c";
-    console.log("set c");
-}
-
-function getAnswer4(){
-    user_answer += "d";
-    console.log("set d");
+    if(answer == a){
+        user_answer += "a";
+    }
+    else if(answer == b){
+        user_answer += "b";
+    }
+    else if(answer == c){
+        user_answer += "c";
+    }
+    else if(answer == d){
+        user_answer += "d";
+    }else{
+        user_answer += null;
+    }
 }
 
 
-function checkAnswer(right_answer,user_answer){
+function checkAnswer(answer1,answer2){
 
-    for(let a=0; a<right_answer.length; a++){
+    
 
-        if(right_answer[a] == user_answer[b]){
+    for(let a=0; a<answer1.length; a++){
+
+        if(answer1.charAt(a) == answer2.charAt(a)){
             not++;
         }else{
 
@@ -61,13 +54,14 @@ function checkAnswer(right_answer,user_answer){
     }
 
     console.log(not);
+
 }
 
 
 function makeColor(){
 
-    let easy_plusVal = 60;
-    let easy_plusVal_half = 30;
+    let easy_plusVal = 40;
+    let easy_plusVal_half = 20;
 
     //var tileColor = "#" + Math.round(Math.random() * 0xffffff).toString(16);
 
@@ -157,6 +151,4 @@ function makeColor(){
 
         right_answer += "b" ;
     }
-
-    check = check+1;
 }
